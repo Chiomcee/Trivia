@@ -1,0 +1,576 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-buttons .dropdown {
+    position: relative;
+}
+
+.auth-buttons .dropbtn {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.auth-buttons .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #746969;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 10px;
+}
+
+.auth-buttons .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.auth-buttons .dropdown-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.auth-buttons .dropdown-content form label {
+    font-weight: bold;
+    color: black;
+}
+
+.auth-buttons .dropdown-content form input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.auth-buttons .dropdown-content form button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.auth-buttons .dropdown-content form button:hover {
+    background-color: #218838;
+}
+
+.auth-buttons a {
+    color: white;
+    background-color: #007bff;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.auth-buttons a:hover {
+    background-color: #0056b3;
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero {
+    background: url('../images/hero1.png') no-repeat center center/cover;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.hero h1 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.hero p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.hero button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.hero button:hover {
+    background-color: #218838;
+}
+
+.categories {
+    width: 100%;
+    text-align: center;
+}
+
+.categories h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.category-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.category-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 200px;
+}
+
+.category-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.category-card p {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.trivia-categories {
+    width: 100%;
+    text-align: center;
+}
+
+.trivia-categories h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.categories-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.categories-list span {
+    background-color: skyblue;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.plans {
+    width: 100%;
+    text-align: center;
+}
+
+.plans h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.plans-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.plan {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    padding: 20px;
+}
+
+.plan h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.plan p {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #28a745;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.plan ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.plan button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.plan button:hover {
+    background-color: #0056b3;
+}
+
+.form-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-section h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+#registrationForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#registrationForm label {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+    align-self: flex-start;
+}
+
+#registrationForm input[type="text"],
+#registrationForm input[type="email"],
+#registrationForm input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+#registrationForm input[type="text"]:focus,
+#registrationForm input[type="email"]:focus,
+#registrationForm input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button[type="submit"] {
+    margin-top: 20px;
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+button[type="submit"] a {
+    color: #fff;
+    text-decoration: none;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+.question-form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.question-form-container h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+#question-text {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#answers input[type="radio"] {
+    display: none;
+}
+
+#answers label {
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #eaeaea;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+}
+
+#answers input[type="radio"]:checked + label {
+    background-color: #007bff;
+    color: #fff;
+}
+
+#timer {
+    margin: 20px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.profile-form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.profile-form-container h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+#profile-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#profile-form label {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+    align-self: flex-start;
+}
+
+#profile-form input[type="text"],
+#profile-form input[type="email"],
+#profile-form input[type="file"],
+#profile-form select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+#profile-form input[type="text"]:focus,
+#profile-form input[type="email"]:focus,
+#profile-form input[type="file"]:focus,
+#profile-form select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.form-section,
+.game-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.form-section h1,
+.game-section h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+    align-self: flex-start;
+}
+
+form select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+form select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-content .social-media a img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+.footer-content .footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-content .footer-links div {
+    text-align: left;
+}
+
+.footer-content .footer-links h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footer-content .footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-content .footer-links ul li {
+    margin-bottom: 5px;
+}
+
+.footer-content .footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-content .footer-links ul li a:hover {
+    color: #007bff;
+}

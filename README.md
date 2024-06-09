@@ -62,5 +62,19 @@ Element Sizes: Buttons and fields should be appropriately sized for easy interac
 Field Lengths: Fields should have appropriate maximum and minimum lengths to ensure data integrity.
 Styles: Consistent use of fonts, colors, and styles across the application for a cohesive look.
 
-Conclusion
-This comprehensive framework outlines the purpose, scope, and detailed structure of the Trivia Game project. By following this framework, the development team can ensure that all aspects of the game are thoroughly planned and executed, providing a rewarding experience for both free and premium users.
+## Directory Structure
+
+- `css/`
+  - `styles.css`: Contains all the CSS styles for the project.
+- `img/`
+  - `default-profile.png`: Default profile picture.
+- `js/`
+  - `scripts.js`: JavaScript file for form handling and validations.
+- `index.html`: Home page with links to Register and Login.
+Pages:
+- `login.html`: Login form.
+- `register.html`: Registration form.
+- `profile.html`: Profile form.
+- `game-selection.html`: Game selection form.
+- `question.html`: Question form.
+- `points-redemption.html`: Points redemption form.

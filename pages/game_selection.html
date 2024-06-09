@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Selection - Trivia Edu Game</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Play Solo</a></li>
+                <li><a href="./profile_form.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="form-section">
+            <h1>Choose Your Plan</h1>
+            <form action="" method="post" autocomplete="on" id="subscriptionForm" onsubmit="handleSubscription(event)">
+                <label for="subscriptionType">Select Plan</label>
+                <select id="subscriptionType" name="subscriptionType" required>
+                    <option value="free">Free</option>
+                    <option value="premium">$10/month</option>
+                </select>
+                <button type="submit"><a href="#game-section" >Continue</a></button>
+            </form>
+        </section>
+        <section class="game-section" id="game-section">
+            <h1>Select Game</h1>
+            <form id="gameSelectionForm" onsubmit="handleGameSelection(event)">
+                <label for="category">Category Selection</label>
+                <select id="category" name="category" required>
+                    <option value="general">General</option>
+                    <option value="history">History</option>
+                    <option value="science">Science</option>
+                    <!-- More categories to be added as needed -->
+                </select>
+                <label for="difficulty">Difficulty Level</label>
+                <select id="difficulty" name="difficulty" required>
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+                <button type="submit"><a href="./question_form.html">Start Game</a></button>
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-facebook-square'></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></a>
+                <a href="#"><i class='bx bxl-linkedin' ></i></a>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Player Community</h4>
+                    <ul>
+                        <li><a href="#">For Partners</a></li>
+                        <li><a href="#">Advertisers</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Get</h4>
+                    <ul>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Mobile App</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+

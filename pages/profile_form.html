@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Trivia Edu Game</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Play Solo</a></li>
+                <li><a href="./profile_form.html">Profile</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <div class="dropdown">
+                    <button class="dropbtn">Log in</button>
+                    <div class="dropdown-content">
+                        <form action="" method="post" autocomplete="on" id="loginForm" onsubmit="handleLogin(event)">
+                            <label for="loginEmail">Email</label>
+                            <input type="email" id="loginEmail" name="email" required>
+                            <label for="loginPassword">Password</label>
+                            <input type="password" id="loginPassword" name="password" required>
+                            <button type="submit"><a href="./game_selection.html">Login in</a></button>
+                        </form>
+                    </div>
+                </div>
+                <a href="./registration_form.html">Sign up</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="profile-form-container">
+            <h1>Profile Form</h1>
+            <form action="" method="post" autocomplete="on" id="profile-form">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+    
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="profile-picture">Profile Picture</label>
+                <input type="file" id="profile-picture" name="profile-picture">
+    
+                <label for="subscription-status">Subscription Status</label>
+                <select id="subscription-status" name="subscription-status">
+                    <option value="free">Free</option>
+                    <option value="premium">Premium</option>
+                </select>
+    
+                <button type="submit">Update Profile</button>
+                <button type="submit"><a href="./point_redemption.html" style="text-decoration: none;">Point Redemption</a></button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-facebook-square'></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></a>
+                <a href="#"><i class='bx bxl-linkedin' ></i></a>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Player Community</h4>
+                    <ul>
+                        <li><a href="#">For Partners</a></li>
+                        <li><a href="#">Advertisers</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Get</h4>
+                    <ul>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Mobile App</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+

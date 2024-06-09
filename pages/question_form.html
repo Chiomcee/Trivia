@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Questions Form - Trivia Edu Game</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Play Solo</a></li>
+                <li><a href="./profile_form.html">Profile</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <div class="dropdown">
+                    <button class="dropbtn">Log in</button>
+                    <div class="dropdown-content">
+                        <form id="loginForm" onsubmit="handleLogin(event)">
+                            <label for="loginEmail">Email</label>
+                            <input type="email" id="loginEmail" name="email" required>
+                            <label for="loginPassword">Password</label>
+                            <input type="password" id="loginPassword" name="password" required>
+                            <button type="submit"><a href="./game_selection.html">Login in</a></button>
+                        </form>
+                    </div>
+                </div>
+                <a href="./registration_form.html">Sign up</a>
+            </div>
+        </nav>
+    </header>
+    <div class="question-form-container">
+        <h1>Question Form</h1>
+        <form action="" method="post" autocomplete="on" id="question-form">
+            <p id="question-text">Question text goes here</p>
+            <div id="answers">
+                <input type="radio" id="answer1" name="answer" value="1">
+                <label for="answer1">Answer 1</label><br>
+
+                <input type="radio" id="answer2" name="answer" value="2">
+                <label for="answer2">Answer 2</label><br>
+
+                <input type="radio" id="answer3" name="answer" name="answer" value="3">
+                <label for="answer3">Answer 3</label><br>
+
+                <input type="radio" id="answer4" name="answer" value="4">
+                <label for="answer4">Answer 4</label><br>
+            </div>
+            <div id="timer">Timer: <span id="time">30</span> seconds</div>
+            <button type="submit">Submit Answer</button>
+        </form>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-facebook-square'></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></a>
+                <a href="#"><i class='bx bxl-linkedin' ></i></a>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Player Community</h4>
+                    <ul>
+                        <li><a href="#">For Partners</a></li>
+                        <li><a href="#">Advertisers</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Get</h4>
+                    <ul>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Mobile App</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="game.js"></script>
+</body>
+</html>

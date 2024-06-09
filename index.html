@@ -1,14 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="author" content="Chioma Igwe">
-        <meta name="keyword" content="HTML 5, CSS 3, JavaScript, Tables and forms">
-        <meta name="description" content="page holding assignment-12 on Forms Building">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Trivia Game</title>
-    </head>
-    <body>
-
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Edu Game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Play Solo</a></li>
+                <li><a href="pages/profile_form.html">Profile</a></li>
+            </ul>
+            <div class="auth-buttons" id="auth-buttons">
+                <div class="dropdown">
+                    <button id="dropbtn" class="dropbtn">Log in</button>
+                    <div class="dropdown-content">
+                        <form action="" id="loginForm" autocomplete="on" onsubmit="handleLogin(event)">
+                            <label for="loginEmail">Email</label>
+                            <input type="email" id="loginEmail" name="email" required>
+                            <label for="loginPassword">Password</label>
+                            <input type="password" id="loginPassword" name="password" required>
+                            <button type="submit"><a href="./pages/game_selection.html">Log in</a></button>
+                        </form>
+                    </div>
+                </div>
+                <a href="pages/registration_form.html">Sign up</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Challenge your knowledge &amp; earn rewards!</h1>
+            <p>Start your first game now.</p>
+            <button type="submit" id="startPlayingBtn"><a href="#dropbtn">Start playing</a></button>
+        </section>
+        <section class="categories">
+            <h2>Choose Your Categories</h2>
+            <div class="category-cards">
+                <div class="category-card">
+                    <img src="images/a_play_with_friends (1).png" alt="Play with Friends">
+                    <p>Play with Friends<br>Invite, Compete, Win</p>
+                </div>
+                <div class="category-card">
+                    <img src="images/triviafun.png" alt="Trivia Fun">
+                    <p>Trivia Fun<br>Challenge &amp; Enjoy</p>
+                </div>
+                <div class="category-card">
+                    <img src="images/laughnlearn.png" alt="Laugh & Learn">
+                    <p>Laugh &amp; Learn<br>Entertainment &amp; Education</p>
+                </div>
+                <div class="category-card">
+                    <img src="images/expandurknl.png" alt="Expand Your Knowledge">
+                    <p>Expand Your Knowledge<br>Learn something new every day</p>
+                </div>
+                <div class="category-card">
+                    <img src="images/nowistime.png" alt="Now's the Time!">
+                    <p>Now's the Time!<br>Join the Fun</p>
+                </div>
+            </div>
+        </section>
+        <section class="trivia-categories">
+            <h2>Trivia Categories</h2>
+            <div class="categories-list">
+                <span>General</span>
+                <span>History</span>
+                <span>Science</span>
+                <span>Sports</span>
+                <span>Movies</span>
+                <span>Animals</span>
+                <span>Music</span>
+                <span>Technology</span>
+                <span>Food</span>
+                <span>Fashion</span>
+                <span>Literature</span>
+                <span>Art</span>
+                <span>Politics</span>
+                <span>Geography</span>
+                <span>Celebrities</span>
+                <span>Mythology</span>
+                <span>Pop Culture</span>
+            </div>
+        </section>
+        <section class="plans">
+            <h2>Choose Your Plan</h2>
+            <div class="plans-list">
+                <div class="plan">
+                    <h3>Basic</h3>
+                    <p>FREE</p>
+                    <ul>
+                        <li>5 free games</li>
+                        <li>Limited plays</li>
+                        <li>Unlock more features</li>
+                    </ul>
+                    <button>Start for Free</button>
+                </div>
+                <div class="plan">
+                    <h3>Pro</h3>
+                    <p>$10/month</p>
+                    <ul>
+                        <li>Online multiplayer</li>
+                        <li>Unlimited games</li>
+                        <li>Exclusive benefits</li>
+                    </ul>
+                    <button>Upgrade to Pro</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-facebook-square'></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></a>
+                <a href="#"><i class='bx bxl-linkedin' ></i></a>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Player Community</h4>
+                    <ul>
+                        <li><a href="#">For Partners</a></li>
+                        <li><a href="#">Advertisers</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Get</h4>
+                    <ul>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Mobile App</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
 </html>
