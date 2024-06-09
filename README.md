@@ -1,5 +1,9 @@
 # Trivia Game
 
+Video-Demo-Link(Google drive): https://drive.google.com/file/d/144vF8ZUTQJSY5YdP906mjwR_n1615ij0/view?usp=sharing
+
+Linkedin Video-demo-link: https://www.linkedin.com/posts/chioma-igwe-aca_schoolofprogrammingandsoftwaredevelopment-activity-7205667387495374849-1KvP?utm_source=share&utm_medium=member_android
+
 ## General Overview of a Trivia Game Project
 
 1. Purpose of the Project
