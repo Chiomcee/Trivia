@@ -1,3 +1,4 @@
+// Questions data
 const questions = {
 science: [
     {
@@ -83,8 +84,8 @@ general: [
 };
 
 let currentCategory;
-let currentQuestionIndex = 0;
-const totalQuestions = 5;
+let currentQuestionIndex = 0; // Default category, change this based on user's choice
+const totalQuestions = 5; // Total questions to be asked
 let timer;
 
 function loadQuestion() {

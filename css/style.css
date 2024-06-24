@@ -527,17 +527,20 @@ form select:focus {
 /* points redemption stylings */
 
 .points-redemption-section {
-    width: 50%;
-    margin: auto;
+    background-color: #fff;
     padding: 20px;
-    background-color: #f4f4f4;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 .points-redemption-section h1 {
-    text-align: center;
     margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
 }
 
 .points-redemption-section form {
@@ -547,15 +550,21 @@ form select:focus {
 }
 
 .points-redemption-section label {
+    margin-top: 10px;
+    font-size: 16px;
     font-weight: bold;
+    color: #555;
+    align-self: flex-start;
 }
 
 .points-redemption-section input[type="text"],
 .points-redemption-section input[type="number"] {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
     width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
 }
 
 .points-redemption-section button {
