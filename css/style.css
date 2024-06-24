@@ -211,7 +211,7 @@ main {
 }
 
 .trivia-categories {
-    width: 100%;
+    width: 90%;
     text-align: center;
 }
 
@@ -223,7 +223,7 @@ main {
 .categories-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
     justify-content: center;
 }
 
@@ -232,6 +232,8 @@ main {
     padding: 10px 20px;
     border-radius: 20px;
     font-size: 16px;
+    color: #fff;
+    transition: background-color 0.3s;
 }
 
 .plans {
@@ -260,6 +262,10 @@ main {
     padding: 20px;
 }
 
+.plan:hover {
+    transform: scale(1.05);
+}
+
 .plan h3 {
     margin-bottom: 10px;
     font-size: 24px;
@@ -283,8 +289,8 @@ main {
 }
 
 .plan button {
-    background-color: #007bff;
-    color: white;
+    background-color: #28a745;
+    color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -518,6 +524,61 @@ form select:focus {
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
+/* points redemption stylings */
+
+.points-redemption-section {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.points-redemption-section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.points-redemption-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.points-redemption-section label {
+    font-weight: bold;
+}
+
+.points-redemption-section input[type="text"],
+.points-redemption-section input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.points-redemption-section button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.points-redemption-section button:hover {
+    background-color: #45a049;
+}
+
+#welcomeMessage {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
 
 /* Footer */
 footer {
@@ -525,52 +586,81 @@ footer {
     color: #fff;
     width: 100%;
     padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .footer-content {
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    width: 90%;
-    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media {
+    margin-bottom: 20px;
+}
+
+.social-media a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
     flex-wrap: wrap;
 }
 
-.footer-content .social-media a img {
-    width: 30px;
-    height: 30px;
-    margin: 0 10px;
+.footer-links div {
+    flex: 1;
+    min-width: 150px;
+    margin: 10px;
 }
 
-.footer-content .footer-links {
-    display: flex;
-    gap: 20px;
-}
-
-.footer-content .footer-links div {
-    text-align: left;
-}
-
-.footer-content .footer-links h4 {
+.footer-links h4 {
     margin-bottom: 10px;
-    font-size: 18px;
 }
 
-.footer-content .footer-links ul {
+.footer-links ul {
     list-style: none;
     padding: 0;
 }
 
-.footer-content .footer-links ul li {
+.footer-links ul li {
     margin-bottom: 5px;
 }
 
-.footer-content .footer-links ul li a {
+.footer-links ul li a {
     color: #fff;
     text-decoration: none;
-    transition: color 0.3s;
 }
 
-.footer-content .footer-links ul li a:hover {
-    color: #007bff;
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .category-card, .plan {
+        width: calc(50% - 30px);
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .auth-buttons {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .category-card, .plan {
+        width: 100%;
+    }
 }

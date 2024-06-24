@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Chioma Igwe">
+    <meta name="keyword" content="HTML 5, CSS 3, JavaScript,forms">
+    <meta name="description" content="page holding trivia edu game on HTML Layout & Grid-view  Webpage">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Selection - Trivia Edu Game</title>
     <link rel="stylesheet" href="../css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    
 </head>
 <body>
     <header>
@@ -27,7 +29,7 @@
                     <option value="free">Free</option>
                     <option value="premium">$10/month</option>
                 </select>
-                <button type="submit"><a href="#game-section" >Continue</a></button>
+                <button type="submit"><a href="#game-section">Continue</a></button>
             </form>
         </section>
         <section class="game-section" id="game-section">
@@ -38,7 +40,6 @@
                     <option value="general">General</option>
                     <option value="history">History</option>
                     <option value="science">Science</option>
-                    <!-- More categories to be added as needed -->
                 </select>
                 <label for="difficulty">Difficulty Level</label>
                 <select id="difficulty" name="difficulty" required>
@@ -46,17 +47,16 @@
                     <option value="medium">Medium</option>
                     <option value="hard">Hard</option>
                 </select>
-                <button type="submit"><a href="./question_form.html">Start Game</a></button>
+                <button type="submit">Start Game</button>
             </form>
         </section>
-
     </main>
     <footer>
         <div class="footer-content">
             <div class="social-media">
                 <a href="#"><i class='bx bxl-facebook-square'></i></a>
-                <a href="#"><i class='bx bxl-twitter' ></i></a>
-                <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
             </div>
             <div class="footer-links">
                 <div>
@@ -84,6 +84,15 @@
             </div>
         </div>
     </footer>
+    <script>
+        function handleGameSelection(event) {
+            event.preventDefault();
+            const category = document.getElementById('category').value;
+            const difficulty = document.getElementById('difficulty').value;
+            localStorage.setItem('selectedCategory', category);
+            localStorage.setItem('selectedDifficulty', difficulty);
+            window.location.href = './question_form.html';
+        }
+    </script>
 </body>
 </html>
-

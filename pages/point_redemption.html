@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Chioma Igwe">
+    <meta name="keyword" content="HTML 5, CSS 3, JavaScript,forms">
+    <meta name="description" content="page holding trivia edu game on HTML Layout & Grid-view  Webpage">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Points Redemption - Trivia Edu Game</title>
     <link rel="stylesheet" href="../css/style.css">
@@ -20,6 +23,7 @@
     <main>
         <section class="points-redemption-section">
             <h1>Redeem Points</h1>
+            <p id="welcomeMessage">Welcome, Player!</p>
             <form action="" method="post" autocomplete="on" id="pointsRedemptionForm" onsubmit="handlePointsRedemption(event)">
                 <label for="currentPoints">Current Points</label>
                 <input type="text" id="currentPoints" name="currentPoints" disabled>
@@ -67,6 +71,6 @@
             </div>
         </div>
     </footer>
+    <script src="../js/points_redemption.js"></script>
 </body>
 </html>
-
